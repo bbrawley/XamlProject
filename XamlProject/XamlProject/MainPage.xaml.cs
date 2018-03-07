@@ -11,7 +11,7 @@ namespace XamlProject
 	{
 		public MainPage()
 		{
-			InitializeComponent();
+            InitializeComponent();
 		}
 	}
 }

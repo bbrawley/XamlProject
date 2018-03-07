@@ -2,10 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamlProject"
-             x:Class="XamlProject.MainPage">
+             x:Class="XamlProject.MainPage"
+             Title="XamlProject">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+        </Grid.RowDefinitions>
+        <!--Header Background-->
+        <BoxView BackgroundColor="Yellow" Grid.Row="0" />
+        <Image Source="xamlimg2.PNG" Aspect="AspectFill" />
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        <!--Order Status-->
+        <BoxView BackgroundColor="White" Grid.Row="1" HeightRequest="250"/>
+        <StackLayout Grid.Row="1" Padding="0,50,0,0">
+            <Label Text="Order On The Way" TextColor="DarkSlateGray" Style="{StaticResource StatsNumberLabel}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco" 
+                   Style="{StaticResource MainBodyLabel}" TextColor="DarkSlateGray" 
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+        </StackLayout>
+        
+    </Grid>
+
+   
+
 
 </ContentPage>

@@ -128,4 +128,10 @@
       <Name>XamlProject</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\XamlImg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\XamlImg2.PNG" />
+  </ItemGroup>
 </Project>
